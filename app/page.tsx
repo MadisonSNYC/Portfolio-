@@ -9,38 +9,18 @@ export default function Home() {
   return (
     <div className="min-h-screen flex bg-dark-bg">
       <Sidebar />
-      <div className="flex-1 flex flex-col ml-64 min-h-screen floral-bg">
+      <div className="flex-1 flex flex-col ml-52 min-h-screen floral-bg">
         <Topbar />
-        <main className="flex-1 p-8 pt-8 space-y-16">
+        <main className="flex-1 p-10 pt-12 md:pt-20 space-y-20 relative z-10">
           {/* Hero Section */}
-          <section className="relative min-h-[60vh] flex items-center justify-center px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <motion.h1 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                className="text-4xl md:text-6xl font-bold mb-6 neon-text"
-              >
-                Technical Perspective Architect
-              </motion.h1>
-              <motion.p 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                className="text-xl text-gray-400 mb-12 max-w-2xl mx-auto"
-              >
-                Exploring the intersection of technology, design, and human experience
-              </motion.p>
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                className="h-64 bg-dark-surface rounded-lg border border-gray-800 shadow-lg neon-glow flex items-center justify-center mb-8"
-              >
-                {/* Placeholder for hero visual */}
-                <button className="neon-btn mt-4">View Projects</button>
-              </motion.div>
+          <section className="relative flex flex-col items-center justify-center min-h-[70vh] md:min-h-[80vh] px-4">
+            <div className="max-w-3xl mx-auto text-center relative z-20">
+              <h1 className="text-5xl md:text-7xl font-extrabold neon-text mb-8 leading-tight drop-shadow-lg">Technical Perspective Architect</h1>
+              <p className="text-xl md:text-2xl text-gray-300 mb-10 font-medium">From $300M in NYC real estate to building AI trading platforms and custom CRMs. <span className="text-neon-blue font-bold">This is Madison's pivot.</span></p>
+              <button className="neon-btn text-lg px-10 py-4 mb-8">See the Work</button>
             </div>
+            {/* Visual Hook Placeholder */}
+            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[420px] h-[220px] md:w-[600px] md:h-[320px] bg-gradient-to-br from-neon-blue/30 via-neon-purple/20 to-neon-pink/30 rounded-3xl blur-2xl opacity-60 z-10 pointer-events-none" />
           </section>
 
           {/* Press Section */}
