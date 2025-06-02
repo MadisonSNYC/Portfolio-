@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  .neon-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-neon-pink via-neon-purple to-neon-blue drop-shadow-[0_0_8px_#b026ff99];
+  }
+  .neon-glow {
+    box-shadow: 0 0 12px 2px #00f3ff66, 0 0 32px 4px #ff2e8899;
+    border: 1.5px solid #00f3ff;
+  }
+  .nav-link {
+    @apply px-4 py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors rounded-lg;
+  }
+  .card {
+    @apply bg-dark-surface rounded-2xl p-6 border border-gray-800 hover:border-neon-purple/30 transition-colors shadow-xl;
+  }
+  .section-title {
+    @apply text-3xl font-extrabold mb-8 neon-text tracking-tight;
+  }
+  .floral-bg {
+    background-image: url('/floral-accent.svg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 320px;
+    opacity: 0.12;
+    pointer-events: none;
+  }
+  .neon-btn {
+    @apply px-6 py-2 rounded-lg font-bold bg-gradient-to-r from-neon-pink via-neon-purple to-neon-blue text-white shadow-lg hover:scale-105 transition-transform;
+    box-shadow: 0 0 12px 2px #00f3ff66, 0 0 32px 4px #ff2e8899;
+  }
+} 
