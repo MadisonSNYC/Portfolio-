@@ -12,12 +12,12 @@ module.exports = {
         ink: '#1a1a1a',
         accentPink: '#f9d5e5',
         accentPurple: '#d8b4fe',
+        floralAccent: '#ffd6e0',
         'neon-pink': '#ff2e88',
         'neon-blue': '#00f3ff',
         'neon-purple': '#b026ff',
         'dark-bg': '#0a0a0f',
         'dark-surface': '#151520',
-        'floral-accent': '#ffd6e0',
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
